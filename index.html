@@ -1,23 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello Group 2 Cloud</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Thrive Africa Cloud Computing — April Cohort | Group 2 Final Project</title>
   <style>
-    body {
-      display: flex;
-      height: 100vh;
-      justify-content: center;
-      align-items: center;
-      background: linear-gradient(to right, #4facfe, #00f2fe);
-      font-family: Arial, sans-serif;
-      color: white;
-      font-size: 3rem;
-    }
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8;--glass:rgba(255,255,255,0.03)}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+    body{background:linear-gradient(180deg,#071021 0%, #081724 100%);color:#e6eef6;display:flex;align-items:center;justify-content:center;padding:32px}
+    .container{max-width:900px;width:100%}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;padding:28px;box-shadow:0 8px 30px rgba(2,6,23,0.7);border:1px solid rgba(255,255,255,0.03)}
+    header{display:flex;gap:18px;align-items:center}
+    .logo{width:96px;height:96px;border-radius:10px;overflow:hidden;flex:0 0 96px;background:var(--glass);display:flex;align-items:center;justify-content:center}
+    .logo img{width:100%;height:100%;object-fit:cover;display:block}
+    h1{font-size:20px;margin:0;color:#fff}
+    p.lead{margin:6px 0 0;color:var(--muted);font-size:14px}
+    .meta{margin-top:18px;display:flex;flex-wrap:wrap;gap:12px}
+    .chip{background:rgba(255,255,255,0.03);padding:8px 12px;border-radius:999px;font-size:13px;color:var(--muted);border:1px solid rgba(255,255,255,0.02)}
+    table{width:100%;border-collapse:collapse;margin-top:18px}
+    th,td{padding:12px 10px;text-align:left;border-bottom:1px solid rgba(255,255,255,0.03)}
+    th{font-size:13px;color:var(--muted);font-weight:600}
+    td{font-size:15px;color:#e6eef6}
+    a.tel{color:var(--accent);text-decoration:none;font-weight:600}
+    .footer{margin-top:20px;color:var(--muted);font-size:13px}
+    @media (max-width:600px){header{flex-direction:row} .logo{width:72px;height:72px}}
   </style>
 </head>
 <body>
-  Hello Group 2 Cloud Static Webpage
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="logo">
+          <!-- image stored in container; adjust path if hosting elsewhere -->
+          <img src="/mnt/data/701207d7-d4b6-41d6-b106-dadc5e3102c5.png" alt="Thrive Africa" />
+        </div>
+        <div>
+          <h1>Thrive Africa — Cloud Computing (April Cohort)</h1>
+          <p class="lead">Final Project: <strong>CI/CD Deployment of Static Website on EC2 + Nginx</strong></p>
+          <div class="meta">
+            <div class="chip">Project: CD/CD Deployment of Static Website on EC2 + Nginx</div>
+            <div class="chip">Project Group: <strong>2</strong></div>
+          </div>
+        </div>
+      </header>
+
+      <section>
+        <table aria-label="Project Group 2 Members">
+          <thead>
+            <tr>
+              <th style="width:65%">Name</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Benjamin Lamptey</td><td><a class="tel" href="tel:+233243277644">0243277644</a></td></tr>
+            <tr><td>Nathaniel Adu</td><td><a class="tel" href="tel:+233598728700">0598728700</a></td></tr>
+            <tr><td>Seidu Abdulai</td><td><a class="tel" href="tel:+233551015175">0551015175</a></td></tr>
+            <tr><td>Rodney Kwaku Dey</td><td><a class="tel" href="tel:+233541081335">0541081335</a></td></tr>
+            <tr><td>Eben Kormla Mensah</td><td><a class="tel" href="tel:+233244401510">0244401510</a></td></tr>
+            <tr><td>Ebenezer Kobina Mensah Mintah Ankomah</td><td><a class="tel" href="tel:+233542158212">0542158212</a></td></tr>
+            <tr><td>David Kwabena Amenuku</td><td><a class="tel" href="tel:+233206967251">0206967251</a></td></tr>
+            <tr><td>Isaac James Aidoo</td><td><a class="tel" href="tel:+233540753026">0540753026</a></td></tr>
+          </tbody>
+        </table>
+
+        <p class="footer">This static page is prepared for the Thrive Africa Cloud Computing April Cohort — Group 2 final project. Deploy this file as <code>index.html</code> to your webroot (for example <code>/var/www/html/</code>) and serve with Nginx on your EC2 instance.</p>
+      </section>
+    </div>
+  </div>
 </body>
 </html>
